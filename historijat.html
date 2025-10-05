@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <title>Historijat - Kafana Casablanca</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Additional historijat-specific styles */
+        .historijat-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .historijat-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .historijat-header h1 {
+            color: #7b0000;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: #7b0000;
+            transform: translateX(-50%);
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 50px;
+            width: 100%;
+        }
+        
+        .timeline-content {
+            position: relative;
+            width: 45%;
+            padding: 20px;
+            background: #fff8f0;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .timeline-item:nth-child(odd) .timeline-content {
+            left: 0;
+        }
+        
+        .timeline-item:nth-child(even) .timeline-content {
+            left: 55%;
+        }
+        
+        .timeline-content h2 {
+            color: #7b0000;
+            margin-top: 0;
+            border-bottom: 2px solid #a00000;
+            padding-bottom: 10px;
+        }
+        
+        .timeline-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 20px;
+            }
+            
+            .timeline-content {
+                width: calc(100% - 60px);
+                left: 60px !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>Historijat Kafane "Casablanca"</h1>
+            <p class="subtitle">Priča koja traje generacijama</p>
+        </div>
+        <div class="header-overlay"></div>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <a href="index.html"><i class="fas fa-home"></i> Početna</a>
+            <a href="meni.html"><i class="fas fa-utensils"></i> Meni</a>
+            <a href="rezervacije.html"><i class="fas fa-calendar-check"></i> Rezervacije</a>
+        </div>
+    </nav>
+
+    <div class="historijat-container">
+        <div class="historijat">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h2>Osnivanje (1984.)</h2>
+                        <img src="slike/osnivanje.jpg" alt="Osnivanje kafane Casablanca 1984." class="timeline-img">
+                        <p>Godine 1984., u jednoj sarajevskoj uličici, susreli su se tri prijatelja: Meho, koji je vjerovao da su kafane temelj civilizacije; Stipo, ekonomista koji je jedinu ispravnu računicu u životu vidio u tome da se pivo prodaje jeftinije od gazirane vode; i Zuka, koji je imao "štelu" za nabavku stolica iz jednog raspuštenog kina. Tako je rođena "Casablanca".</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h2>Zlatno doba (1985.–1991.)</h2>
+                        <img src="slike/zlatno_doba.jpg" alt="Kafana Casablanca u zlatnom dobu" class="timeline-img">
+                        <p>"Casablanca" je postala legendarna u kratkom roku, čuvši se o njoj glas da ima najbolju kahvu u gradu. Konobar Miralem iz Krvavih Njiva vladao je prostorijom kao kapetan broda. Znao je sve: tko pije kratku, a tko dugu; tko je ostavio ženu, a tko je dobio otkaz; i, najvažnije, tko je platio zadnji račun.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h2>Opsada (1992.–1995.)</h2>
+                        <img src="slike/opsada.jpg" alt="Casablanca tokom opsade Sarajeva" class="timeline-img">
+                        <p>Kafana nikada nije zatvorila svoja vrata. U najtežim danima, "Casablanca" je postala oaza normalnosti. Struja generatora dovoljna je bila za jednu sijalicu i mali radio. Cijene su bile u markama, dolarima, konzervama i nafti – štagod imao.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h2>Poslijeratno doba (1996.–2010.)</h2>
+                        <img src="slike/poslijeratno.jpg" alt="Casablanca poslije rata" class="timeline-img">
+                        <p>Kada je mir zadošao, "Casablanca" se polako oporavljala. Stipe je uvjerio Mehu i Zuku da je vrijeme za "gentrifikaciju". Kupili su novi šporet, zalijepili poster maršala Tita pored Bogarta i uveli sataraš.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h2>Moderna era (2011.–danas)</h2>
+                        <img src="slike/moderna.jpg" alt="Casablanca danas" class="timeline-img">
+                        <p>Danas je "Casablanca" živi spomenik. Stipe je u penziji, Meho sanja o proširenju u susjednu prodavnicu cipela, a Zukin sin vodi IT sektor – popravlja wifi. Miralem je sada vlasnik, sijed ali nepogrešiv.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin: 40px 0;">
+            <a href="index.html" class="back-link">
+                <i class="fas fa-arrow-left"></i> Nazad na početnu
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Kafana "Casablanca"</h3>
+                <p>Ulica Maršala Tita 15<br>Sarajevo, Bosna i Hercegovina</p>
+            </div>
+            <div class="footer-section">
+                <h3>Pratite nas</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Kontakt</h3>
+                <p>+387 33 123 456<br>casablanca@sarajevo.ba</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Kafana "Casablanca" | Sarajevo</p>
+        </div>
+    </footer>
+
+</body>
+</html>

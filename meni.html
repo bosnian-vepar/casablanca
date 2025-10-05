@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <title>Meni - Kafana Casablanca</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fdf6e3;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            background-color: #8b0000;
+            color: white;
+            padding: 20px;
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .meni-kategorija {
+            margin: 30px auto;
+            max-width: 900px;
+        }
+
+        .meni-kategorija h2 {
+            color: #8b0000;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #8b0000;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .kartice {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .kartica {
+            background: #fff8f0;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            width: 200px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .kartica:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        }
+
+        .kartica h3 {
+            margin: 0 0 10px 0;
+            color: #8b0000;
+        }
+
+        .kartica p {
+            margin: 0;
+            font-size: 1em;
+            color: #333;
+        }
+
+        a {
+            display: inline-block;
+            margin: 20px auto;
+            color: #8b0000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #ff6347;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meni – Kafana Casablanca</h1>
+
+    <!-- Topli napici -->
+    <div class="meni-kategorija">
+        <h2>Topli napici</h2>
+        <div class="kartice">
+            <div class="kartica">
+                <h3>Kafa kratka</h3>
+                <p>2 KM</p>
+            </div>
+            <div class="kartica">
+                <h3>Kafa duga</h3>
+                <p>2.5 KM</p>
+            </div>
+            <div class="kartica">
+                <h3>Čaj</h3>
+                <p>1.5 KM</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hladni napici -->
+    <div class="meni-kategorija">
+        <h2>Hladni napici</h2>
+        <div class="kartice">
+            <div class="kartica">
+                <h3>Sok narandža</h3>
+                <p>2 KM</p>
+            </div>
+            <div class="kartica">
+                <h3>Sok jabuka</h3>
+                <p>2 KM</p>
+            </div>
+            <div class="kartica">
+                <h3>Voda</h3>
+                <p>1 KM</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sokovi što grizu za grlo -->
+    <div class="meni-kategorija">
+        <h2>Specijalni sokovi</h2>
+        <div class="kartice">
+            <div class="kartica">
+                <h3>Domaća šljiva</h3>
+                <p>3 KM</p>
+            </div>
+            <div class="kartica">
+                <h3>Domaća kajsija</h3>
+                <p>3 KM</p>
+            </div>
+            <div class="kartica">
+                <h3>Domaća višnja</h3>
+                <p>4 KM</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Snack / užina -->
+    <div class="meni-kategorija">
+        <h2>Meze</h2>
+        <div class="kartice">
+            <div class="kartica">
+                <h3>Kifla sa sirom</h3>
+                <p>1.5 KM</p>
+            </div>
+            <div class="kartica">
+                <h3>Pljeskavica</h3>
+                <p>3 KM</p>
+            </div>
+            <div class="kartica">
+                <h3>Pečeni krompir</h3>
+                <p>2 KM</p>
+            </div>
+        </div>
+    </div>
+
+    <p><a href="index.html">⟵ Nazad na početnu</a></p>
+</body>
+</html>
+

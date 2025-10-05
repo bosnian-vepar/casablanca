@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <title>Rezervacije - Kafana Casablanca</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fdf6e3;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            background-color: #8b0000;
+            color: white;
+            padding: 20px;
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 20px auto;
+            text-align: left;
+            padding: 20px;
+            background: #fff8f0;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+        }
+
+        form label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        form input {
+            width: 100%;
+            padding: 7px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        /* Jednostavno dugme */
+        .popup-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 1.1em;
+            font-weight: bold;
+            color: white;
+            background-color: #8b0000;
+            border-radius: 10px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .popup-button:hover {
+            background-color: #ff6347;
+        }
+
+        /* Checkbox hack za popup */
+        #popup-toggle {
+            display: none;
+        }
+
+        .popup {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+        }
+
+        #popup-toggle:checked ~ .popup {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .popup-content {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 1.2em;
+            color: #8b0000;
+            max-width: 400px;
+        }
+
+        .popup-content label {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 8px 20px;
+            background-color: #8b0000;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .popup-content label:hover {
+            background-color: #ff6347;
+        }
+
+        a {
+            display: inline-block;
+            margin: 20px auto;
+            color: #8b0000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #ff6347;
+        }
+    </style>
+</head>
+<body>
+    <h1>Rezervacije</h1>
+
+    <!-- Checkbox koji kontrolira popup -->
+    <input type="checkbox" id="popup-toggle">
+
+    <!-- Simulirana forma -->
+    <form>
+        <label for="ime">Ime:</label>
+        <input type="text" id="ime" name="ime" required>
+
+        <label for="prezime">Prezime:</label>
+        <input type="text" id="prezime" name="prezime" required>
+
+        <label for="brojStola">Broj stola:</label>
+        <input type="number" id="brojStola" name="brojStola" min="1" max="20" required>
+
+        <label for="brojGostiju">Broj gostiju:</label>
+        <input type="number" id="brojGostiju" name="brojGostiju" min="1" max="10" required>
+
+        <label for="datum">Datum:</label>
+        <input type="date" id="datum" name="datum" required 
+               min="2025-10-04" max="2025-11-03">
+
+        <label for="sati">Vrijeme (sati):</label>
+        <input type="time" id="sati" name="sati" required>
+
+        <!-- Dugme za simulaciju slanja -->
+        <label for="popup-toggle" class="popup-button">Pošalji rezervaciju</label>
+    </form>
+
+    <!-- Popup -->
+    <div class="popup">
+        <div class="popup-content">
+            Vaš upit je primljen!<br>
+            Kontaktirat ćemo Vas uskoro!
+            <br>
+            <label for="popup-toggle">OK</label>
+        </div>
+    </div>
+
+    <p><a href="index.html">⟵ Nazad na početnu</a></p>
+</body>
+</html>
+
+
